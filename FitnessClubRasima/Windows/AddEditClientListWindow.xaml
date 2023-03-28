@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="AddEditClientListWindow" Height="1000" Width="500">
     <Grid>
-
+        <!--стиль-->
         <Grid.Background>
             <ImageBrush ImageSource="resources/Background2.jpg" />
         </Grid.Background>
