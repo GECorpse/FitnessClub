@@ -13,7 +13,8 @@
         </Grid.Background>
 
 
-
+<!--окно авторизации-->
+        
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
 
             <Separator Opacity="0" Margin="30"/>
