@@ -17,6 +17,7 @@ namespace FitnessClubRasima.DB
         public int ID { get; set; }
         public int OrderID { get; set; }
         public int ServiceID { get; set; }
+        public int Quantiy { get; set; }
     
         public virtual Order Order { get; set; }
         public virtual Service Service { get; set; }

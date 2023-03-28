@@ -66,6 +66,7 @@
     </ApplicationDefinition>
     <Compile Include="ClassHelper\CartClass.cs" />
     <Compile Include="ClassHelper\EFClass.cs" />
+    <Compile Include="ClassHelper\UserClass.cs" />
     <Compile Include="DB\Client.cs">
       <DependentUpon>FitnessDB.tt</DependentUpon>
     </Compile>
@@ -96,6 +97,9 @@
     <Compile Include="DB\OrderService.cs">
       <DependentUpon>FitnessDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="DB\Role.cs">
+      <DependentUpon>FitnessDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="DB\Service.cs">
       <DependentUpon>FitnessDB.tt</DependentUpon>
     </Compile>
@@ -112,6 +116,9 @@
       <DependentUpon>FitnessDB.tt</DependentUpon>
     </Compile>
     <Compile Include="DB\TrainerService.cs">
+      <DependentUpon>FitnessDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\User.cs">
       <DependentUpon>FitnessDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Windows\AddEditClientListWindow.xaml.cs">

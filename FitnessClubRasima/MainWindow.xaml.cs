@@ -23,6 +23,7 @@ namespace FitnessClubRasima
         public MainWindow()
         {
             InitializeComponent();
+            TxtNameUser.Text = "Пользователь " + ClassHelper.UserClass.AuthUser.Login + " " + ClassHelper.UserClass.AuthUser.IdRole;
         }
     }
 }

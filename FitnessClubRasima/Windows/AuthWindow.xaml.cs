@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FitnessClubRasima;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,39 @@ namespace FitnessClubRasima.Windows
         public AuthWindow()
         {
             InitializeComponent();
+        }
+
+        private void BtnSignIn_Click(object sender, RoutedEventArgs e)
+        {
+            // авторизация
+            // 1. получить всех пользователей!
+            // 2. выбрать пользователей по условию 
+            // 3. из итогового списка выбрать одну запись 
+            //
+
+            var authUser = ClassHelper.EFClass.context.User.ToList()
+                .Where(i => i.Login == tbLogin.Text && i.Password == tbLogin.Text)
+                .FirstOrDefault();
+
+            if (authUser != null)
+            {
+                // сохраняем пользователя
+                ClassHelper.UserClass.AuthUser = authUser;
+
+                // переход на нужное окно
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+            }
+            else
+            {
+                MessageBox.Show("Пользователь не найден");
+            }
+        }
+
+        private void TextBlock_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            RegWindow registrationClientWindow = new RegWindow();
+            registrationClientWindow.ShowDialog();
         }
     }
 }
