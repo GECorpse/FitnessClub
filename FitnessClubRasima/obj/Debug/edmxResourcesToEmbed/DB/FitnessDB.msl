@@ -74,17 +74,8 @@
     <EntitySetMapping Name="OrderService">
       <EntityTypeMapping TypeName="FitnessClubRasimaModel.OrderService">
         <MappingFragment StoreEntitySet="OrderService">
-          <ScalarProperty Name="Quantiy" ColumnName="Quantiy" />
           <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
           <ScalarProperty Name="OrderID" ColumnName="OrderID" />
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Role">
-      <EntityTypeMapping TypeName="FitnessClubRasimaModel.Role">
-        <MappingFragment StoreEntitySet="Role">
-          <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -128,17 +119,6 @@
         <MappingFragment StoreEntitySet="TrainerService">
           <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
           <ScalarProperty Name="TrainerID" ColumnName="TrainerID" />
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="User">
-      <EntityTypeMapping TypeName="FitnessClubRasimaModel.User">
-        <MappingFragment StoreEntitySet="User">
-          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="Login" ColumnName="Login" />
           <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>

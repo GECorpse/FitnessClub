@@ -4,24 +4,21 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="9b5a321d9a904da7a5b2613c3aa900dc" Name="Diagram1" ZoomLevel="85">
+      <Diagram DiagramId="9b5a321d9a904da7a5b2613c3aa900dc" Name="Diagram1">
         <EntityTypeShape EntityType="FitnessClubRasimaModel.Client" Width="1.5" PointX="3" PointY="1" />
         <EntityTypeShape EntityType="FitnessClubRasimaModel.Employee" Width="1.5" PointX="3" PointY="6.125" />
         <EntityTypeShape EntityType="FitnessClubRasimaModel.Gender" Width="1.5" PointX="0.75" PointY="2.125" />
         <EntityTypeShape EntityType="FitnessClubRasimaModel.Order" Width="1.5" PointX="5.25" PointY="1.75" />
-        <EntityTypeShape EntityType="FitnessClubRasimaModel.OrderService" Width="1.5" PointX="7.5" PointY="1.875" />
-        <EntityTypeShape EntityType="FitnessClubRasimaModel.Role" Width="1.5" PointX="7.75" PointY="9.25" />
+        <EntityTypeShape EntityType="FitnessClubRasimaModel.OrderService" Width="1.5" PointX="7.5" PointY="2" />
         <EntityTypeShape EntityType="FitnessClubRasimaModel.Service" Width="1.5" PointX="5.25" PointY="5.75" />
         <EntityTypeShape EntityType="FitnessClubRasimaModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="8.75" />
         <EntityTypeShape EntityType="FitnessClubRasimaModel.Trainer" Width="1.5" PointX="5.25" PointY="9.875" />
         <EntityTypeShape EntityType="FitnessClubRasimaModel.TrainerService" Width="1.5" PointX="7.5" PointY="6" />
-        <EntityTypeShape EntityType="FitnessClubRasimaModel.User" Width="1.5" PointX="10" PointY="8.875" />
         <AssociationConnector Association="FitnessClubRasimaModel.FK_Client_Gender" />
         <AssociationConnector Association="FitnessClubRasimaModel.FK_Order_Client" />
         <AssociationConnector Association="FitnessClubRasimaModel.FK_Order_Employee" />
         <AssociationConnector Association="FitnessClubRasimaModel.FK_OrderService_Order" />
         <AssociationConnector Association="FitnessClubRasimaModel.FK_OrderService_Service" />
-        <AssociationConnector Association="FitnessClubRasimaModel.FK_User_Role" />
         <AssociationConnector Association="FitnessClubRasimaModel.FK_TrainerService_Service" />
         <AssociationConnector Association="FitnessClubRasimaModel.FK_TrainerService_Trainer" />
       </Diagram>
